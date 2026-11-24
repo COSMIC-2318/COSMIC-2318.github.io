@@ -10,7 +10,7 @@
 /* ============================ PART 1: CONTENT ============================ */
 
 const CONFIG = {
-  email: "ankitbajpeyy1@gmail.com",       // e.g. "ankit@example.com"
+  email: "ankitbajpeyee1@gmail.com",       // e.g. "ankit@example.com"
   whatsapp: "",    // digits with country code, e.g. "919876543210"
   instagram: "https://www.instagram.com/_ankit_bajpayee_",   // e.g. "https://www.instagram.com/your_handle"
   linkedin: "https://www.linkedin.com/in/ankit-bajpeyee-3a72b331a",    // e.g. "https://www.linkedin.com/in/your-name"
