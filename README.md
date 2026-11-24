@@ -2,7 +2,7 @@
 
 **Live:** https://cosmic-2318.github.io
 
-Personal portfolio of Ankit "Cosmic" Bajpeyee, a final-year B.Tech CSE (AI & ML) student who builds data pipelines, machine learning models and quant research systems end to end.
+Personal portfolio of Ankit Bajpeyee "COSMIC", a final-year B.Tech CSE (AI & ML) student who builds data pipelines, machine learning models and quant research systems end to end.
 
 The site builds itself in front of the visitor: after you click **Open Visit**, 18 cursor "agents" draw wireframes, type the text and assemble every section while the page scrolls on its own in time with the soundtrack. It's fully built in 50 seconds, then you can scroll and read.
 
