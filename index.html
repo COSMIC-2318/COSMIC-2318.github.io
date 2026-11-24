@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-type="service">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COSMIC | Ankit Bajpeyee · ML Builder & Quant Researcher</title>
+  <meta name="description" content="Ankit 'Cosmic' Bajpeyee builds data pipelines, machine learning models and quant research systems end to end. Book a meeting or invite me to a project.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23e8202f'/%3E%3Ctext x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='20' text-anchor='middle' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to content</a>
+
+  <!-- ============ GATE: "Open Visit" — starts the build and the music ============ -->
+  <div id="gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate-grid" aria-hidden="true"></div>
+    <p class="gate-top mono"><span>COSMIC®</span><span>PORTFOLIO · ML / QUANT / DATA</span><span id="gate-year"></span></p>
+    <div class="gate-mid">
+      <p class="mono gate-kicker"><span class="live"></span>18 AGENTS READY TO BUILD THIS PAGE</p>
+      <h1 id="gate-title" class="gate-title">WELCOME<span class="red">.</span></h1>
+      <button type="button" id="gate-open" class="gate-btn"><span>OPEN VISIT</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="mono gate-hint">🎧 SOUND ON FOR THE FULL EXPERIENCE</p>
+    </div>
+    <p class="gate-bottom mono"><button type="button" id="gate-skip" class="gate-skip">Enter without animation or sound</button><span>PRESS ENTER ↵</span></p>
+  </div>
+
+  <!-- ============ BUILD LAYER: rulers, cursors, wireframes ============ -->
+  <div class="ruler ruler-x" aria-hidden="true"><i id="rx-hi"></i><div id="rx-nums"></div></div>
+  <div class="ruler ruler-y" aria-hidden="true"><i id="ry-hi"></i><div id="ry-nums"></div></div>
+  <div id="build-layer" aria-hidden="true"></div>
+
+  <div id="dock" class="dock" role="group" aria-label="Page build controls">
+    <span id="dock-dots" class="dock-dots"></span>
+    <span class="mono"><b id="dock-agents">0</b> agents</span>
+    <span class="mono"><b id="dock-done">0</b> / <span id="dock-total">0</span> layers</span>
+    <span class="dock-bar"><i id="dock-bar"></i></span>
+    <span id="dock-status" class="mono dock-status">Scanning page…</span>
+    <button type="button" id="dock-pause" class="dock-btn" aria-label="Pause build">❚❚</button>
+    <button type="button" id="dock-skip" class="dock-btn">Skip</button>
+    <button type="button" id="dock-replay" class="dock-btn" aria-label="Rebuild the page">↻</button>
+  </div>
+
+  <audio id="music" src="assets/music.mp3" loop preload="none"></audio>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a href="#top" class="logo" aria-label="Cosmic, back to top">COSMIC<span class="logo-dot"></span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#numbers">Numbers</a>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button type="button" class="sound js-music" aria-pressed="false" aria-label="Play background music">
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label mono">Sound off</span>
+        </button>
+        <a href="#contact" class="talk mono">Let's talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-word" aria-hidden="true">PORTFOLIO</div>
+      <figure class="hero-photo">
+        <img src="assets/cosmic.webp" alt="Ankit Bajpeyee in a black suit" width="800" height="1066" fetchpriority="high">
+      </figure>
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="hero-role mono">ML BUILDER / QUANT RESEARCHER<br><span>DATA SYSTEMS, END TO END</span></p>
+          <p class="hello">Hello, I'm</p>
+          <h1 class="hero-name">COSMIC<span class="red">.</span></h1>
+          <p class="hero-lead">Ankit Bajpeyee. I turn raw market ticks and messy data into models, backtests and tools that people can actually use.</p>
+          <div class="hero-btns">
+            <a href="#work" class="btn btn-red">See my work</a>
+            <button type="button" class="btn btn-ghost js-book">Book a meeting</button>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <p class="mono side-status"><span class="live"></span>AVAILABLE FOR COLLABORATION</p>
+          <p class="side-quote">Every model<br>a different question.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 2. MUSIC / SHOWREEL BAR ============ -->
+    <div class="reel-bar">
+      <div class="wrap reel-in">
+        <button type="button" class="reel-play js-music" aria-pressed="false" aria-label="Play background music">
+          <span class="reel-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="i-play" d="M8 5v14l11-7z"/><path class="i-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></span>
+          <span class="mono"><b>PLAY SOUNDTRACK</b> · BACKGROUND SCORE</span>
+        </button>
+        <p class="mono dim scroll-hint">SCROLL TO EXPLORE ↓</p>
+        <p class="mono dim">COSMIC · ML / QUANT / DATA</p>
+      </div>
+    </div>
+
+    <!-- ============ 3. SELECTED WORK ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="eyebrow mono"><span class="red">01</span> / SELECTED WORK</p>
+            <h2 class="h-big">WORK THAT SPEAKS<span class="red">.</span></h2>
+          </div>
+          <p class="mono dim sec-count"><span id="work-count">7</span> PROJECTS</p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button type="button" class="filter on" data-f="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter" data-f="quant" role="tab" aria-selected="false">Quant</button>
+          <button type="button" class="filter" data-f="ml" role="tab" aria-selected="false">Machine learning</button>
+          <button type="button" class="filter" data-f="data" role="tab" aria-selected="false">Data</button>
+        </div>
+        <div id="work-grid" class="work-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 4. LOGO STRIP ============ -->
+    <section class="logos" aria-label="Where I have learned and built">
+      <div class="wrap logos-in">
+        <p class="mono logos-label">WHERE I'VE<br><b>LEARNED &amp; BUILT.</b></p>
+        <ul class="logo-row" id="logo-row"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 5. THE NUMBERS ============ -->
+    <section class="section" id="numbers">
+      <div class="wrap numbers">
+        <div class="num-left">
+          <p class="eyebrow mono"><span class="red">02</span> / MEASURED, NOT CLAIMED</p>
+          <h2 class="h-cond">THE WORK.<br><span class="red">THE NUMBERS.</span></h2>
+          <div class="laurel">
+            <svg class="laurel-l" viewBox="0 0 40 90" aria-hidden="true"><use href="#leaf"/></svg>
+            <span class="laurel-num" data-count="7">7</span><span class="laurel-plus red">+</span>
+            <svg class="laurel-r" viewBox="0 0 40 90" aria-hidden="true"><use href="#leaf"/></svg>
+          </div>
+          <p class="dim">Projects built end to end: data, model, test, demo.</p>
+        </div>
+        <ol class="num-list" id="num-list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 6. FROM RAW TO REAL ============ -->
+    <section class="section" id="raw">
+      <div class="wrap raw">
+        <div class="raw-text">
+          <p class="eyebrow mono">A LOOK UNDER THE SURFACE</p>
+          <h2 class="h-cond">FROM RAW.<br><span class="red">TO REAL.</span></h2>
+          <p class="dim">Left: what the market sends, a noisy stream of ticks. Right: what my pipeline turns it into: features, a market regime and a signal. Drag the handle.</p>
+          <p class="mono small">DOM TRADE · 46 FEATURES · GMM REGIMES · ONLINE ENSEMBLE<br>ILLUSTRATION, NOT LIVE DATA</p>
+        </div>
+        <div class="compare" id="compare">
+          <div class="cmp-raw" id="cmp-raw" aria-hidden="true"></div>
+          <div class="cmp-real" id="cmp-real" aria-hidden="true"><svg id="cmp-svg" preserveAspectRatio="none"></svg></div>
+          <span class="cmp-tag cmp-tag-l mono">RAW TICKS</span>
+          <span class="cmp-tag cmp-tag-r mono">MODEL VIEW</span>
+          <div class="cmp-handle" id="cmp-handle" aria-hidden="true"><span>⟷</span></div>
+          <input type="range" id="cmp-range" min="0" max="100" value="50" aria-label="Compare raw ticks with the model view">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. ABOUT / PROCESS ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <p class="eyebrow mono"><span class="red">03</span> / BEHIND THE MODELS</p>
+        <div class="about-head">
+          <h2 class="h-cond">NOT JUST MODELS.<br>BUT HOW THEY <span class="red">THINK.</span></h2>
+          <p class="dim about-intro">I'm Ankit Bajpeyee, a final-year B.Tech CSE (AI &amp; ML) student at Dr. B.C. Roy Engineering College, Durgapur. I came to quant from manual trading in Indian equities, and now build the systems instead of clicking the buttons.</p>
+        </div>
+        <div class="about-grid">
+          <div class="edu">
+            <p class="mono label">EDUCATION &amp; SKILLS</p>
+            <div class="edu-item"><h3>B.Tech CSE (AI &amp; ML)</h3><p>Dr. B.C. Roy Engineering College · graduating Aug 2027</p></div>
+            <div class="edu-item"><h3>Data Analytics Certificate</h3><p>MSME E-SDP · Government of India · 2026</p></div>
+            <div class="edu-item"><h3>IEEE CIS Student Chapter</h3><p>Member · research internship 2025</p></div>
+            <p class="mono label red">TOOLKIT</p>
+            <div class="chips" id="chips"></div>
+          </div>
+          <ol class="process" id="process"></ol>
+          <figure class="quote-card">
+            <span class="mono">03.</span>
+            <blockquote>Build the whole system, measure it honestly, and understand every part of it.</blockquote>
+            <figcaption class="sign">Cosmic</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. JOURNEY ============ -->
+    <section class="section" id="journey">
+      <div class="wrap">
+        <p class="eyebrow mono"><span class="red">04</span> / THE JOURNEY</p>
+        <h2 class="h-big">KEEP MOVING. KEEP BUILDING<span class="red">.</span></h2>
+        <div class="journey">
+          <ol class="timeline" id="timeline"></ol>
+          <div class="wins">
+            <h3 class="h-cond small-cond">LITTLE WINS.<br><span class="red">BIG MEANING.</span></h3>
+            <ol id="wins"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow mono"><span class="red">05</span> / YOUR NEXT PROJECT</p>
+          <h2 class="h-cond huge">LET'S WORK<br>TOGETHER.</h2>
+          <p class="dim">Have data, a model idea or a research question? Book a meeting, invite me to a project, or send a freelance brief. I work in IST (UTC+5:30) and happily meet in your morning or evening.</p>
+          <button type="button" class="btn btn-red js-book">Book a meeting</button>
+        </div>
+        <ul class="contact-list" id="contact-list"></ul>
+        <div class="feel-card">
+          <p class="mono dim">COSMIC®</p>
+          <p class="feel">MAKE IT<br><span class="red">FEEL REAL.</span></p>
+          <button type="button" class="feel-play js-music" aria-pressed="false" aria-label="Play background music">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-play" d="M8 5v14l11-7z"/><path class="i-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in mono">
+      <span class="logo">COSMIC<span class="logo-dot"></span></span>
+      <span>© <span id="year"></span> ANKIT BAJPEYEE · DURGAPUR, INDIA</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ BOOKING DIALOG ============ -->
+  <dialog id="book" class="book" aria-labelledby="book-title">
+    <form id="book-form" class="form" method="dialog" novalidate>
+      <div class="book-head">
+        <h2 id="book-title" class="h-cond">BOOK A <span class="red">MEETING.</span></h2>
+        <button type="button" class="x" id="book-close" aria-label="Close">✕</button>
+      </div>
+      <div class="kinds" role="radiogroup" aria-label="What is this about">
+        <input type="radio" name="kind" id="k1" value="Meeting" checked><label for="k1">Meeting</label>
+        <input type="radio" name="kind" id="k2" value="Project invite"><label for="k2">Project invite</label>
+        <input type="radio" name="kind" id="k3" value="Freelance gig"><label for="k3">Freelance gig</label>
+        <input type="radio" name="kind" id="k4" value="Job or internship"><label for="k4">Job / internship</label>
+      </div>
+      <div class="row">
+        <label>Your name<input id="f-name" autocomplete="name"></label>
+        <label>Your email<input id="f-email" type="email" autocomplete="email"></label>
+      </div>
+      <div class="row">
+        <label>Preferred date<input id="f-date" type="date"></label>
+        <label>Time (IST)
+          <select id="f-time">
+            <option>Morning, 9 to 12</option>
+            <option>Afternoon, 12 to 5</option>
+            <option selected>Evening, 5 to 9</option>
+            <option>Late, 9 to 11</option>
+          </select>
+        </label>
+      </div>
+      <label>What would you like to discuss?<textarea id="f-msg" placeholder="A short note about the project, the data or the role"></textarea></label>
+      <p id="f-error" class="error" aria-live="polite"></p>
+      <div class="form-btns" id="send-btns"></div>
+      <p id="f-status" class="note" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <!-- shared laurel leaf -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="leaf" viewBox="0 0 40 90"><g fill="currentColor"><path d="M30 88C10 74 6 46 14 20l3 1C10 46 14 72 32 85z"/><ellipse cx="8" cy="66" rx="7" ry="3.4" transform="rotate(-50 8 66)"/><ellipse cx="6" cy="50" rx="7" ry="3.4" transform="rotate(-70 6 50)"/><ellipse cx="7" cy="34" rx="7" ry="3.4" transform="rotate(-85 7 34)"/><ellipse cx="12" cy="19" rx="6.5" ry="3.2" transform="rotate(-100 12 19)"/><ellipse cx="22" cy="74" rx="6.5" ry="3.2" transform="rotate(-20 22 74)"/><ellipse cx="20" cy="57" rx="6" ry="3" transform="rotate(-35 20 57)"/><ellipse cx="21" cy="41" rx="6" ry="3" transform="rotate(-55 21 41)"/></g></symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
